@@ -279,6 +279,11 @@ local function onUpdate()
   end
 end
 
+-- the UI app closes its big home view when a menu opens
+local function onUiChangedState(toState)
+  guihooks.trigger('SpotifyRemoteUiState', toState)
+end
+
 local function onExtensionLoaded()
   loadConfig()
 end
@@ -305,6 +310,7 @@ M.toggleVisible = toggleVisible
 M.command = command
 
 M.onUpdate = onUpdate
+M.onUiChangedState = onUiChangedState
 M.onExtensionLoaded = onExtensionLoaded
 M.onExtensionUnloaded = onExtensionUnloaded
 

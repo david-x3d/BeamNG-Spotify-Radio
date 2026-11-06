@@ -32,9 +32,12 @@ WINDOWS = sys.platform == "win32"
 HERE = os.path.dirname(os.path.abspath(__file__))
 PORT = 8898
 PROXY_PORT = 8897
-# path prefix -> (host, path prefix there); /image/ returns the cover base64 encoded so it can travel as text
+# path prefix -> (host, path prefix there); images come back base64 encoded so they can travel as text
 PROXY_TARGETS = {"/accounts/": ("accounts.spotify.com", "/"), "/api/": ("api.spotify.com", "/"),
-                 "/image/": ("i.scdn.co", "/image/")}
+                 "/image/": ("i.scdn.co", "/image/"), "/mosaic/": ("mosaic.scdn.co", "/"),
+                 "/imagecdn-ak/": ("image-cdn-ak.spotifycdn.com", "/image/"),
+                 "/imagecdn-fa/": ("image-cdn-fa.spotifycdn.com", "/image/")}
+IMAGE_PREFIXES = ("/image/", "/mosaic/", "/imagecdn-ak/", "/imagecdn-fa/")
 LOGIN_PREFIX = "https://accounts.spotify.com/authorize?"
 HEARTBEAT_TIMEOUT = 2.0
 RATE = 48000
@@ -439,7 +442,7 @@ class SpotifyProxy(http.server.BaseHTTPRequestHandler):
             status, data, retry = POOL.request(host, self.command, base + self.path[len(prefix):], body, headers)
         except (http.client.HTTPException, OSError) as err:
             status, data, retry = 502, json.dumps({"error": "proxy", "error_description": str(err)}).encode(), None
-        if prefix == "/image/" and status == 200:
+        if prefix in IMAGE_PREFIXES and status == 200:
             data = base64.b64encode(data)
         self.send_response(status)
         self.send_header("Content-Type", "application/json")

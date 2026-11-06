@@ -4,7 +4,7 @@
   "types": [
     "ui.apps.categories.info"
   ],
-  "description": "Shows the current Spotify track and controls playback. Can be shown/hidden with a key.",
+  "description": "Control Spotify playback and browse playlists, liked songs, albums and search in the expanded home view. Can be shown/hidden with a key.",
   "css": {
     "width": "330px",
     "height": "190px",
@@ -12,7 +12,7 @@
     "bottom": "200px"
   },
   "author": "davidx3d",
-  "version": "1.0",
+  "version": "1.1",
   "directive": "spotifyRemoteDavidx3d",
   "category": "General",
   "isAuxiliary": false,

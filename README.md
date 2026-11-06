@@ -21,6 +21,7 @@
 | | |
 | --- | --- |
 | 🎛️ **In-game remote** | Current track, cover art and progress; play/pause, next and previous |
+| 🏠 **Home view** | The grid button opens a big Spotify-style start page: recently played, your playlists, liked songs, top songs and artists, saved albums and search. Pick something, press the grid button again, and you're back to the small player |
 | 🚗 **Car radio** | Spotify plays *from the car*: it fills the cabin when you sit inside, and comes from the vehicle when the camera is outside |
 | 🔊 **Car speaker EQ** | Optional filter that makes the music sound like small car speakers instead of headphones |
 | 🔑 **Ignition aware** | Pauses Spotify when the ignition is off, when you walk, or when the game is paused, and resumes afterwards |
@@ -62,6 +63,8 @@ flowchart LR
 ## 🚀 Setup
 
 ### 1. Install the mod
+
+Download `spotifyremote_davidx3d.zip` from the [latest release](https://github.com/david-x3d/BeamNG-Spotify-Radio/releases/latest), or build it from this repository:
 
 ```bash
 python3 tools/build_mod.py
@@ -137,6 +140,17 @@ The log is written to `helper\helper.log`.
 
 Key bindings are under **Options → Controls → General** (`Spotify: …`).
 
+> [!NOTE]
+> Connected before the home view existed? Open it with the grid button and click **Reconnect Spotify** once. The home view needs permission to read your playlists and library. Also update the helper, it now loads playlist covers too.
+
+### Browse your music
+
+Press the grid button in the small player to open the home view. Browse recently played music, playlists, liked songs, top tracks and artists, or saved albums, and use search to find more music. Open a tile to browse its songs or start playback.
+
+Press the grid button again to return to the small player. The home view also closes automatically when a game menu opens or the UI apps are hidden.
+
+When updating an existing installation, replace the mod ZIP and update the helper from the same release's source archive, then restart the helper and reload BeamNG. For an unpacked development installation, press **Ctrl+L** to reload the Lua changes.
+
 ## ⚙️ Settings
 
 The settings are behind the gear icon in the app:
@@ -180,6 +194,15 @@ On Windows, also make sure VB-CABLE is installed and `svcl.exe` is next to `help
 <br>
 
 Click **"Nothing opened? Copy the link"** and paste the link into your browser.
+
+</details>
+
+<details>
+<summary><b>A playlist opens without songs</b></summary>
+
+<br>
+
+Spotify only lets apps list the songs of playlists you own or collaborate on. Press the play button to play the whole playlist anyway.
 
 </details>
 
