@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>BeamNG Spotify Radio</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2421"/>
+      <stop offset="1" stop-color="#0c0e0d"/>
+    </linearGradient>
+    <linearGradient id="green" gradientUnits="userSpaceOnUse" x1="50" y1="50" x2="210" y2="230">
+      <stop offset="0" stop-color="#3ef08a"/>
+      <stop offset="1" stop-color="#12a849"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#1ed760" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#1ed760" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <circle cx="128" cy="138" r="110" fill="url(#glow)"/>
+  <!-- steering wheel -->
+  <circle cx="128" cy="138" r="78" fill="none" stroke="url(#green)" stroke-width="18"/>
+  <g stroke="url(#green)" stroke-width="16" stroke-linecap="round">
+    <path d="M58 146 L96 146"/>
+    <path d="M198 146 L160 146"/>
+    <path d="M128 172 L128 206"/>
+  </g>
+  <!-- hub with play button -->
+  <circle cx="128" cy="146" r="32" fill="url(#green)"/>
+  <path d="M119 130 L146 146 L119 162 Z" fill="#0f1211" stroke="#0f1211" stroke-width="4" stroke-linejoin="round"/>
+  <!-- equalizer -->
+  <g fill="#3ef08a">
+    <rect x="95" y="94" width="9" height="10" rx="4.5"/>
+    <rect x="109" y="82" width="9" height="22" rx="4.5"/>
+    <rect x="123.5" y="73" width="9" height="31" rx="4.5"/>
+    <rect x="138" y="84" width="9" height="20" rx="4.5"/>
+    <rect x="152" y="92" width="9" height="12" rx="4.5"/>
+  </g>
+</svg>

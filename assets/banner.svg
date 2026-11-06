@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <title>BeamNG Spotify Radio</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c211e"/>
+      <stop offset="1" stop-color="#0a0c0b"/>
+    </linearGradient>
+    <linearGradient id="green" gradientUnits="userSpaceOnUse" x1="50" y1="50" x2="210" y2="230">
+      <stop offset="0" stop-color="#3ef08a"/>
+      <stop offset="1" stop-color="#12a849"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1ed760" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#1ed760" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#1ed760" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#1ed760" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#1ed760" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="1200" height="360" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <circle cx="210" cy="180" r="230" fill="url(#glow)"/>
+    <!-- road markings -->
+    <rect x="0" y="318" width="1200" height="3" fill="url(#road)"/>
+    <g fill="#1ed760" fill-opacity="0.18">
+      <rect x="430" y="336" width="70" height="6" rx="3"/>
+      <rect x="560" y="336" width="70" height="6" rx="3"/>
+      <rect x="690" y="336" width="70" height="6" rx="3"/>
+      <rect x="820" y="336" width="70" height="6" rx="3"/>
+      <rect x="950" y="336" width="70" height="6" rx="3"/>
+    </g>
+    <!-- background equalizer -->
+    <g fill="#1ed760" fill-opacity="0.05">
+      <rect x="980" y="150" width="22" height="130" rx="11"/>
+      <rect x="1015" y="100" width="22" height="180" rx="11"/>
+      <rect x="1050" y="60" width="22" height="220" rx="11"/>
+      <rect x="1085" y="120" width="22" height="160" rx="11"/>
+      <rect x="1120" y="170" width="22" height="110" rx="11"/>
+    </g>
+  </g>
+  <!-- logo -->
+  <g transform="translate(82 52) scale(1)">
+    <circle cx="128" cy="138" r="78" fill="none" stroke="url(#green)" stroke-width="18"/>
+    <g stroke="url(#green)" stroke-width="16" stroke-linecap="round">
+      <path d="M58 146 L96 146"/>
+      <path d="M198 146 L160 146"/>
+      <path d="M128 172 L128 206"/>
+    </g>
+    <circle cx="128" cy="146" r="32" fill="url(#green)"/>
+    <path d="M119 130 L146 146 L119 162 Z" fill="#0f1211" stroke="#0f1211" stroke-width="4" stroke-linejoin="round"/>
+    <g fill="#3ef08a">
+      <rect x="95" y="94" width="9" height="10" rx="4.5"/>
+      <rect x="109" y="82" width="9" height="22" rx="4.5"/>
+      <rect x="123.5" y="73" width="9" height="31" rx="4.5"/>
+      <rect x="138" y="84" width="9" height="20" rx="4.5"/>
+      <rect x="152" y="92" width="9" height="12" rx="4.5"/>
+    </g>
+  </g>
+  <!-- text -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif">
+    <text x="390" y="166" fill="#ffffff" font-size="60" font-weight="700" letter-spacing="-1">BeamNG <tspan fill="#1ed760">Spotify</tspan> Radio</text>
+    <text x="392" y="218" fill="#b3b3b3" font-size="26">Your music, through your car's speakers.</text>
+    <text x="392" y="262" fill="#6f7a74" font-size="18" letter-spacing="2">IN-GAME REMOTE  ·  CAR RADIO  ·  LINUX + WINDOWS</text>
+  </g>
+</svg>
