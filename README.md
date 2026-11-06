@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  Control Spotify without leaving the driver's seat, and hear it <b>through your car's speakers</b>,<br>
+  <b>Search, choose and play music directly in BeamNG.drive</b>, and hear it <b>through your car's speakers</b>,<br>
   muffled from outside, full stereo in the cabin, quiet when the engine is off.
 </p>
 
@@ -21,6 +21,7 @@
 | | |
 | --- | --- |
 | 🎛️ **In-game remote** | Current track, cover art and progress; play/pause, next and previous |
+| 🎵 **Choose music in the game** | Search Spotify, choose individual songs, browse your playlists and albums, and start playback directly from BeamNG |
 | 🏠 **Home view** | The grid button opens a big Spotify-style start page: recently played, your playlists, liked songs, top songs and artists, saved albums and search. Pick something, press the grid button again, and you're back to the small player |
 | 🚗 **Car radio** | Spotify plays *from the car*: it fills the cabin when you sit inside, and comes from the vehicle when the camera is outside |
 | 🔊 **Car speaker EQ** | Optional filter that makes the music sound like small car speakers instead of headphones |
@@ -143,9 +144,14 @@ Key bindings are under **Options → Controls → General** (`Spotify: …`).
 > [!NOTE]
 > Connected before the home view existed? Open it with the grid button and click **Reconnect Spotify** once. The home view needs permission to read your playlists and library. Also update the helper, it now loads playlist covers too.
 
-### Browse your music
+### Search, choose and play music in the game
 
-Press the grid button in the small player to open the home view. Browse recently played music, playlists, liked songs, top tracks and artists, or saved albums, and use search to find more music. Open a tile to browse its songs or start playback.
+You can choose what to listen to directly inside BeamNG, without switching to the Spotify window:
+
+1. Press the **grid button** in the small player to open the home view.
+2. Browse your **playlists, liked songs, saved albums, recently played music, top tracks and artists**, or use **search** to find music.
+3. Open a playlist or album and click a song to play it, or use its play button to start the whole playlist or album.
+4. Use the player controls to pause, resume, skip songs or go back to the previous track.
 
 Press the grid button again to return to the small player. The home view also closes automatically when a game menu opens or the UI apps are hidden.
 
