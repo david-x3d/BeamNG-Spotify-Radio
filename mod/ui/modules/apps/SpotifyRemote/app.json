@@ -1,0 +1,20 @@
+{
+  "domElement": "<spotify-remote-davidx3d></spotify-remote-davidx3d>",
+  "name": "Spotify Remote",
+  "types": [
+    "ui.apps.categories.info"
+  ],
+  "description": "Shows the current Spotify track and controls playback. Can be shown/hidden with a key.",
+  "css": {
+    "width": "330px",
+    "height": "190px",
+    "right": "10px",
+    "bottom": "200px"
+  },
+  "author": "davidx3d",
+  "version": "1.0",
+  "directive": "spotifyRemoteDavidx3d",
+  "category": "General",
+  "isAuxiliary": false,
+  "interactive": "yes"
+}

@@ -1,0 +1,6 @@
+{
+"spotifyremote_toggleApp"  :{"cat":"general", "order": 90, "ctx": "tlua", "onDown": "if spotifyRemote_main then spotifyRemote_main.toggleVisible() end", "title": "Spotify: Show/hide app", "desc": "Shows or hides the Spotify Remote app" },
+"spotifyremote_playPause"  :{"cat":"general", "order": 91, "ctx": "tlua", "onDown": "if spotifyRemote_main then spotifyRemote_main.command('playPause') end", "title": "Spotify: Play/Pause", "desc": "Plays or pauses the music" },
+"spotifyremote_next"       :{"cat":"general", "order": 92, "ctx": "tlua", "onDown": "if spotifyRemote_main then spotifyRemote_main.command('next') end", "title": "Spotify: Next track", "desc": "Skips to the next track" },
+"spotifyremote_previous"   :{"cat":"general", "order": 93, "ctx": "tlua", "onDown": "if spotifyRemote_main then spotifyRemote_main.command('previous') end", "title": "Spotify: Previous track", "desc": "Goes back to the previous track" }
+}

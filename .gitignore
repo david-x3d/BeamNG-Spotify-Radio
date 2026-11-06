@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+dist/
+helper/helper.log
+helper/svcl.exe
+helper/svcl.chm
+helper/readme.txt
